@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+
+<script type="text/typescript">
+    import { Foo } from "../SomePath/ThatHas/MyModule";
+
+    let myFooOne = new Foo();
+    myFooOne.bar('green').bar('blue').bar('yellow');
+</script>
+
+<script type="text/typescript">
+    import { Foo } from "SomePath/ThatHas/MyModule";
+
+    let myFooTwo = new Foo();
+    myFooTwo.bar('green').bar('blue').bar('yellow');
+</script>
+
+<script type="text/typescript">
+    import { Foo } from "ThatHas/MyModule";
+
+    let myFooThree = new Foo();
+    myFooThree.bar('green').bar('blue').bar('yellow');
+</script>
+
+</body>
+</html>
