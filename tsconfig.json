@@ -3,6 +3,12 @@
         "baseUrl": ".",
         "module": "es6",
         "moduleResolution": "node",
+        "paths": {
+            "*": [
+                "*",
+                "SomePath/*"
+            ]
+        },
         "target": "es6"
     }
 }
